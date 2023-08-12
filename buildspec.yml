@@ -15,7 +15,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - aws ecr get-login-password --region eu-west-2 | docker login --username AWS --password-stdin 335871625378.dkr.ecr.us-west-2.amazonaws.com
+      - aws ecr get-login-password --region us-west-2 | docker login --username AWS --password-stdin 335871625378.dkr.ecr.us-west-2.amazonaws.com
       - IMAGE_REPO_NAME=232777167307.dkr.ecr.us-west-2.amazonaws.com/hans-repo
       - IMAGE_TAG=latest
   build:
